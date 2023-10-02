@@ -1,0 +1,245 @@
+main{
+    background-color: var(--grey-background);
+}
+.outer_container{
+    position: relative;
+}
+.inner_container{
+    padding-top: 300px;
+}
+.banner_img{
+    width: 100%;
+    display: block;
+    height: 65vh;
+    object-fit: cover;
+    position: absolute;
+}
+.grey_container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.container{
+    background-color: white;
+}
+.grey_box{
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px 25px 50px;
+    margin-bottom: 60px;
+    background-color: #00000080;
+    text-align: center;
+    text-shadow: 0 0 black;
+}
+.grey_box h1{
+    display: inline;
+    color: white;
+}
+h1,p, main span{
+    color: var(--header-bg);
+}
+h1.title{
+    font-size: 30px;
+    color: var(--header-bg);
+    text-transform: uppercase;
+}
+p{
+    text-align: start;
+}
+.content{
+    background-color: white;
+    color: var(--header-bg);
+    position: relative;
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+}
+.events_grid article:nth-child(odd){
+    border-top: var(--border-var);
+    border-bottom: var(--border-var);
+}
+article {
+    display: flex;
+    margin-bottom: 60px;
+    padding: 50px 20px;
+    gap: 20px;
+    max-width: 1140px;
+    margin: 0 auto 30px;
+    min-height: 470px;
+}   
+article h1 {
+    margin-bottom: 18px;
+}
+article p{
+    padding: 0;
+}
+.img_container {
+    width: 100%;
+    height: 260px;
+}
+article img {
+    width: 320px;
+    height: 350px;
+    object-fit: cover;
+}
+article .info_container {
+    padding: 0 0 20px;
+    text-align: start;
+}
+article span{
+    margin: 0px 0 8px;
+    display: block;
+    color: grey;
+    font-weight: bold;
+}
+article p{
+    text-align: start;
+    margin-bottom: 12px;
+}
+article button{
+    margin-top: 10px;
+}
+.references_title{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.references_carousel{
+    display: flex;
+    gap: 25px;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    width: 80%;
+    margin: 30px auto 0;
+    position: relative;
+}
+.references_container{
+    position: relative;
+}
+.references_container .btn_container{
+    height: 30%;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+.references_container button{
+    background-color: black;
+    position: relative;
+    z-index: 20;
+}
+.hideBtn{
+    display: none;
+}
+.references_container button svg{
+    fill: var(--main-grey);
+    height: 30px;
+    width: 30px;
+}
+.references_container button:first-of-type svg{
+    rotate: 180deg;
+}
+.references_carousel .box{
+    min-width: 200px;
+}
+.references_carousel .box img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+.references_carousel .box h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.references_carousel .box span{
+    color: red;
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.references_carousel .box span{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 18px;
+}
+.references_carousel .box span::after{
+    content: ">";
+    font-size: 25px;
+}
+.bottomEvent{
+    background-color: var(--main-bg-color);
+    height: 140px;
+}
+/*Event*/
+.pos{
+    position: absolute;
+    height: 100%;
+}
+button.floatingReturnBtn{
+    padding: 10px;
+    position: sticky;
+    border-radius: 50%;
+    top: 15px;
+    left: 8px;
+    width: 45px;
+    height: 48px;
+    background-color: white;
+}
+button.floatingReturnBtn svg{
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width:880px) {
+    .references_carousel{
+        width: 80%;
+    }
+    .grey_box {
+        min-width: 300px;
+        text-align: center;
+        width: 90%;
+        padding: 30px 15px 30px;
+    }
+    .references_carousel{
+        width: 80%;
+    }
+    article{
+        flex-direction: column;
+    }
+    article .img_container{
+        width: 100%;
+    }
+    article img{
+        width: 100%;
+        height: 100%;
+    }
+    article .info_container{
+        padding-top: 12px;
+    }
+}
+@media (max-width:600px) {
+    main .arrow_button.right{
+        right: -10px !important;
+    }
+    main .arrow_button.left{
+        left: -10px !important;
+    }
+}
+@media (max-width:400px) {
+    .grey_box {
+        min-width: 260px;
+    }
+    main .page_title {
+        font-size: 32px;
+    }
+    .inner_container {
+        padding-top: 200px;
+    }
+    
+}
